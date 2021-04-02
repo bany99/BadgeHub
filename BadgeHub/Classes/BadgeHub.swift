@@ -73,6 +73,10 @@ public class BadgeHub: NSObject {
         setView(view, andCount: 0)
     }
     
+    @objc public func setBackgroundColor(_ backgroundColor: UIColor?) {
+        redCircle.backgroundColor = backgroundColor
+    }
+    
     /// Initializer for setting badge to bar button items
     /// - Parameter barButtonItem: Bar button item on which badge to be add.
     public convenience init?(barButtonItem: UIBarButtonItem) {
