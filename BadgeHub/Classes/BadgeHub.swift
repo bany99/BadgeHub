@@ -164,8 +164,8 @@ public class BadgeHub: NSObject {
     ///   - y: Move circle to up/down.
     @objc public func moveCircleBy(x: CGFloat, y: CGFloat) {
         var frame: CGRect = redCircle.frame
-        frame.origin.x += x
-        frame.origin.y += y
+        frame.origin.x = x
+        frame.origin.y = y
         self.setCircleAtFrame(frame)
     }
     
