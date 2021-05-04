@@ -8,7 +8,7 @@
 import UIKit
 import QuartzCore
 
-fileprivate class BadgeView: UIView {
+@objc public class BadgeView: UIView {
     
     func setBackgroundColor(_ backgroundColor: UIColor?) {
         super.backgroundColor = backgroundColor
@@ -40,7 +40,7 @@ public class BadgeHub: NSObject {
         }
     }
     
-    private var redCircle: BadgeView!
+    @objc public var redCircle: BadgeView!
     private var initialCenter = CGPoint.zero
     private var baseFrame = CGRect.zero
     private var initialFrame = CGRect.zero
